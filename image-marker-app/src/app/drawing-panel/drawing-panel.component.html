@@ -1,0 +1,13 @@
+<div class="drawing_panel_container" (click)=onMouseCLick($event)>
+
+    <svg class="drawing_panel" *ngIf="coordinates.length>0">
+        <!-- <line *ngIf="indexOfelement>0"x1="100"y1="100" x2="0" y2="0" style="stroke:rgb(255,0,0);stroke-width:1"/> -->
+
+        <line *ngFor="let coordinate of coordinates;let indexOfelement=index;"
+            [attr.x1]="indexOfelement>0?coordinates[indexOfelement-1].xCoordinate:coordinates[indexOfelement].xCoordinate" 
+            [attr.y1]="indexOfelement>0?coordinates[indexOfelement-1].yCoordinate:coordinates[indexOfelement].yCoordinate" 
+            [attr.x2]="coordinates[indexOfelement].xCoordinate" 
+            [attr.y2]="coordinates[indexOfelement].yCoordinate" 
+            style="stroke:rgb(255,0,0);stroke-width:1"/>
+      </svg>
+</div>

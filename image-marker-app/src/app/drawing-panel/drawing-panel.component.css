@@ -1,0 +1,11 @@
+.drawing_panel_container{
+    width:100vw;
+    height:100vh;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.drawing_panel{
+    width: inherit;
+    height:inherit;
+    cursor: pointer;
+}
