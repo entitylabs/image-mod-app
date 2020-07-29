@@ -2,8 +2,8 @@
 # NOTE: [ The functionality is modified from v1 ]
 
 1. Press mouse 
-2. drag mouse in any free shape
-3. release mouse
+2. Drag mouse in any free shape
+3. Release mouse
 
 A shape will be created in realtime.
 
