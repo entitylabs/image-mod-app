@@ -3,7 +3,7 @@ NOTE: The functionality is modified from v1
 
 User press the mouse on screen and drag it a free shape will be drawn on release the drawing stops.
 
-![alt text] (https://drive.google.com/file/d/1x6t8GqUYEn6n_3JFpqkvG8cGv1JPjLoy/view?usp=sharing)
+![alt text] (https://drive.google.com/file/d/1-wkdRumoN_iqw_5-U8jZqWCblvsnVVEk/view?usp=sharing)
 
 
 
