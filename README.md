@@ -1,7 +1,7 @@
 
 NOTE: THe functionality is modified from v1
 
-User click the mouse on screen and drag it a free shape will be drawn on release the drawing stops.
+User press the mouse on screen and drag it a free shape will be drawn on release the drawing stops.
 
 
 
