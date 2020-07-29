@@ -1,5 +1,5 @@
 
-NOTE: THe functionality is modified from v1
+NOTE: The functionality is modified from v1
 
 User press the mouse on screen and drag it a free shape will be drawn on release the drawing stops.
 
