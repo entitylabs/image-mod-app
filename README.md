@@ -17,6 +17,6 @@ A shape will be created in realtime.
 A quick POC of how to enable user to draw shapes on image
 
 
-In order to draw free shape on the panel/image click on two points on the screen and a line will be drawn between those points.
+~~In order to draw free shape on the panel/image click on two points on the screen and a line will be drawn between those points.~~
 
 
