@@ -1,5 +1,5 @@
 
-# NOTE: [The functionality is modified from v1
+# NOTE: [ The functionality is modified from v1 ]
 
 1. Press mouse 
 2. drag mouse in any free shape
