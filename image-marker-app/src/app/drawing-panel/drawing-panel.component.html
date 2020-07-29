@@ -1,4 +1,7 @@
-<div class="drawing_panel_container" (click)=onMouseCLick($event)>
+<div class="drawing_panel_container" 
+                                        (mousemove)="onMouseMove($event)"
+                                        (mousedown)="onMousePress($event)"
+                                        (mouseup)="onMouseRelease($event)"> 
 
     <svg class="drawing_panel" *ngIf="coordinates.length>0">
         <!-- <line *ngIf="indexOfelement>0"x1="100"y1="100" x2="0" y2="0" style="stroke:rgb(255,0,0);stroke-width:1"/> -->

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {Coordinates} from './model/line.cooridnates';
+import { Coordinates } from './model/line.cooridnates';
 
 @Component({
   selector: 'app-drawing-panel',
@@ -8,39 +8,53 @@ import {Coordinates} from './model/line.cooridnates';
 })
 export class DrawingPanelComponent implements OnInit {
 
-  
-  coordinates:Coordinates[]=[];
-  isSelectionValid:boolean=false;
+
+  coordinates: Coordinates[] = [];
+  isSelectionValid: boolean = false;
+  isMousePressed: boolean;
 
   constructor() { }
 
   ngOnInit(): void {
-
-    // let coordinateOne = new Coordinates();
-    // coordinateOne.xCoordinate=10;
-    // coordinateOne.yCoordinate=10;
-
-    // this.coordinates.push(coordinateOne);
-
-
-    // let coordinateTwo = new Coordinates();
-    // coordinateTwo.xCoordinate=10;
-    // coordinateTwo.yCoordinate=10;
-
-    // this.coordinates.push(coordinateOne);
   }
 
 
-  onMouseCLick(event:MouseEvent){
-    
+  onMouseCLick(event: MouseEvent) {
+
     console.log(event);
-    let coordinate:Coordinates = new Coordinates();
-    coordinate.xCoordinate=event.clientX;
-    coordinate.yCoordinate=event.clientY;
+    let coordinate: Coordinates = new Coordinates();
+    coordinate.xCoordinate = event.clientX;
+    coordinate.yCoordinate = event.clientY;
     this.coordinates.push(coordinate);
 
-    if(this.coordinates.length>0){
-      this.isSelectionValid=true;
+    if (this.coordinates.length > 0) {
+      this.isSelectionValid = true;
+    }
+  }
+
+  onMousePress(event: MouseEvent) {
+
+    this.isMousePressed = true;
+  }
+
+  onMouseRelease(event: MouseEvent) {
+
+    this.isMousePressed = false;
+
+  }
+
+  onMouseMove(event: MouseEvent) {
+
+    if (this.isMousePressed) {
+      let coordinate: Coordinates = new Coordinates();
+      coordinate.xCoordinate = event.clientX;
+      coordinate.yCoordinate = event.clientY;
+      this.coordinates.push(coordinate);
+
+      if (this.coordinates.length > 0) {
+        this.isSelectionValid = true;
+      }
+
     }
   }
 
